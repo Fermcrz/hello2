@@ -17,7 +17,7 @@
 <div class="container">
   <div class="row">
 
-    <span id="contador" style="font-size: 200px;"></span>
+    <a href="Javascript:alert('Bienvenido al main 2')" class="btn btn-warning btn-sm">clic aqui</a>
   </div>
   
 </div>
@@ -29,22 +29,7 @@
 
 
 
-<script type="text/javascript">
-  var num=10;
 
-
-    intervalId = setInterval('contador()', 1000);
-
-
-function contador() {
-num--;
-document.getElementById('contador').innerHTML=num;
-if(num==0){
-  location.href = 'main2.php';
-    clearInterval(intervalId);
-}
-}
-</script>
 
 
 
