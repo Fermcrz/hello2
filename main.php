@@ -14,6 +14,13 @@
      
 
 
+<div class="container">
+  <div class="row">
+
+    <span id="contador" style="font-size: 200px;">10</span>
+  </div>
+  
+</div>
 
 
 
@@ -23,15 +30,20 @@
 
 
 <script type="text/javascript">
-  
-
-alert("Bienveido a git");
+  var num=10;
 
 
+    intervalId = setInterval('contador()', 1000);
 
+
+function contador() {
+num--;
+document.getElementById('contador').innerHTML=num;
+if(num==0){
+    clearInterval(intervalId);
+}
+}
 </script>
-
-
 
 
 
